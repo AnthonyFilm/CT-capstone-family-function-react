@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-zinc-900 h-full overflow-x-auto
+    
+}
+
+h2 {
+    font-size:medium;
+}
+
+#__next {
+    @apply h-full
+}
+
+html {
+    @apply h-full
+}
+
+.error {
+    color: #c10c0c;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: -0.55rem;
+    margin-bottom: 0.6rem;
+    background-color: #f8aeae;
+    border-radius: 2px;
+    width: 95%;
+
+  }
+  
+
+form label,
+.message {
+    width:95%;
+    font-size: 1rem;
+    color: black;
+    background-color: #a4a4a4;
+    opacity: 75%;
+    padding: 0.2rem 0.2rem;
+    border-radius: 5px;
+    font-weight: normal;
+    display: block;
+    text-align: left;
+    margin: 0.25rem .25rem 0.1rem 0.25rem;
+  }
+  
+  input,
+  select,
+  textarea {
+    width:95%;
+    padding: 0.2rem 0.2rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    border: 2px solid #4a5568;
+    background-color: #ececec;
+    opacity: 70%;
+    border-radius: 5px;
+    outline: none;
+    margin: 0.1rem 0.25rem 0.5rem 0.25rem;
+  }
+  
+  /* .mem-button {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.35rem 0.5rem;
+    background-color: #4299e1;
+    color: #1a202c;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  } */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+ }
+  
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+ }
